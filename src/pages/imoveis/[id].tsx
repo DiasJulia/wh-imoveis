@@ -1,17 +1,11 @@
-import {useRouter} from 'next/router'
+import {useRouter} from 'next/router';
 import React from 'react'
 
-const Lancamento = () => {
-  const { query } = useRouter();
-
-  const id = query.id;
-
+const Imovel = () => {
+    const { query } = useRouter();
   return (
-    <div>
-      
-      Lançamento {id}
-    </div>
+    <div>Imovel com id {query.id} </div>
   )
 }
 
-export default Lancamento
+export default Imovel

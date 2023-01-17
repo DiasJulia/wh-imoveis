@@ -1,17 +1,19 @@
-{
-    "1": {
-        "Nome": "Imóvel 1",
-        "Tipo": "Lançamento",
-        "Preço": 1000
+[{
+        "id": 1,
+        "nome": "Imóvel 1",
+        "tipo": "Lançamento",
+        "preço": 1000
     },
-    "2": {
-        "Nome": "Imóvel 1",
-        "Tipo": "Lançamento",
-        "Preço": 1000
+    {
+        "id": 2,
+        "nome": "Imóvel 2",
+        "tipo": "Lançamento",
+        "preço": 1000
     },
-    "3": {
-        "Nome": "Imóvel 1",
-        "Tipo": "Lançamento",
-        "Preço": 1000
+    {
+        "id": 3,
+        "nome": "Imóvel 3",
+        "tipo": "Lançamento",
+        "preço": 1000
     }
-}
+]
