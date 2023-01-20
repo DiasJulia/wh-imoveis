@@ -2,7 +2,7 @@ import Head from 'next/head'
 import styles from '@/styles/Home.module.css'
 import {Badge, Footer, Navbar, Imovel} from '@/components'
 
-import { Filter, FirstSection, GridLayout, SecondSection, WhiteBlock } from './styles'
+import { Filter, FirstSection, GridLayout, SecondSection, WhiteBlock } from '@/styles/pages/styles'
 
 export default function Home() {
   return (
