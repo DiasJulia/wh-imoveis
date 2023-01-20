@@ -1,9 +1,8 @@
 import Head from 'next/head'
-import { Inter } from '@next/font/google'
 import styles from '@/styles/Home.module.css'
 import {Footer, Navbar} from '@/components'
 
-const inter = Inter({ subsets: ['latin'] })
+import { Filter, FirstSection } from './styles'
 
 export default function Home() {
   return (
@@ -16,7 +15,9 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <Navbar/>
-        <h1>Index</h1>
+        <FirstSection>
+          <Filter></Filter>
+        </FirstSection>
         <Footer/>
       </main>
     </>
