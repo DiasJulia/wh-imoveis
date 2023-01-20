@@ -5,7 +5,7 @@ type navProps = {
 }
 
 export const Nav = styled.nav<navProps>`
-    background-color: ${(props)=> props.scroll>=10 ? '#fff': 'rgba(255, 255, 255, 0.7)'};
+    background-color: ${(props)=> props.scroll<=10 ? 'rgba(255, 255, 255, 0.7)' : '#fff'};
     color: #09346B;
     position: fixed;
     width: 100%;
@@ -14,6 +14,7 @@ export const Nav = styled.nav<navProps>`
     top: 0;
     justify-content: center;
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2), 0px 8px 16px rgba(0, 0, 0, 0.08);
+    z-index: 10;
 `;
 
 export const Menu = styled.ul`
@@ -35,8 +36,9 @@ export const Menu = styled.ul`
         list-style: none;
         position: absolute;
         margin-top: 10px;
-        background-color: #fff;
-        border-radius: 0 12px 12px 12px;
+        background: rgba(233, 233, 233, 0.6);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 8px;
         color: #09346B;
         padding: 10px;
     };
