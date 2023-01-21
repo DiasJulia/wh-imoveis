@@ -10,7 +10,7 @@ export const Nav = styled.nav<navProps>`
     position: fixed;
     width: 100%;
     display: flex;
-    padding: 2rem max(calc(100vw - 1400px), 1rem);
+    padding: 2rem max(calc(100vw - 1400px)/2, 1rem);
     top: 0;
     justify-content: center;
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2), 0px 8px 16px rgba(0, 0, 0, 0.08);
@@ -51,7 +51,7 @@ export const Menu = styled.ul`
 export const Logo = styled.div`
     position: absolute;
     top: 0;
-    left: max(calc(100vw - 1400px), 1rem);
+    left: max(calc(100vw - 1400px)/2, 1rem);
     clip-path: polygon(50% 100%, 100% calc(100% - 50px), 100% 0, 0 0, 0 calc(100% - 50px));
     background-color: #09346B;
     height: calc(100% + 50px);

@@ -18,7 +18,7 @@ export const Filter = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 2em max(calc(100vw - 1400px), 1rem);
+  padding: 2em max(calc(100vw - 1400px)/2, 1rem);
 
   h1{
     text-transform: uppercase;
@@ -45,7 +45,7 @@ export const WhiteBlock = styled.div`
 `;
 
 export const SecondSection = styled.section`
-  padding: 2em max(calc(100vw - 1400px), 1rem);
+  padding: 2em max(calc(100vw - 1400px)/2, 1rem);
   width: 100%;
 
   h2{

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.section`
-    padding: 2em max(calc(100vw - 1400px), 1rem);
+    padding: 2em max(calc(100vw - 1400px)/2, 1rem);
     margin-top: 115px;
     display: flex;
     flex-wrap: wrap;
