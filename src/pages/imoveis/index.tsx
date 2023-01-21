@@ -3,10 +3,11 @@ import styles from '@/styles/Home.module.css'
 
 import imoveis from '../../data/imoveis.json';
 
-import {Footer, Navbar} from '@/components';
+import {Footer, Imovel, Navbar} from '@/components';
 import {useRouter} from 'next/router'
 import React from 'react'
 import Link from 'next/link';
+import {Container} from '@/styles/pages/imoveis';
 
 const Imoveis = () => {
   const { query } = useRouter();
@@ -23,14 +24,17 @@ const Imoveis = () => {
       </Head>
     <main className={styles.main}>
       <Navbar/>
-      Imoveis {query.bairro ? "no bairro " + query.bairro : ""}
-      {
-        imoveis.map((imovel)=>{return (
-          <Link key={imovel.id} href={`/imoveis/${imovel.id}`}>
-            {imovel.nome}
-          </Link>
-        )})
-      }
+      <Container>
+        {query.bairro ? "no bairro " + query.bairro : ""}
+        {
+          imoveis.map((imovel)=>{
+            return ((query.bairro===undefined || imovel.bairro===query.bairro) ?
+            <div key={imovel.id}>
+              <Imovel nome={imovel.nome} preco={imovel.preco} bairro={imovel.bairro} tipo={imovel.tipo} />
+              </div> : <></>)
+          })
+        }
+      </Container>
       <Footer/>
     </main>
     </>

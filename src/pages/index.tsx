@@ -33,9 +33,9 @@ export default function Home() {
             Destaques
           </h2>
           <GridLayout>
-            <Imovel className='main'></Imovel>
-            <Imovel></Imovel>
-            <Imovel></Imovel>
+            <Imovel  nome='Apartamento' preco={410000} bairro='Jatiúca' tipo="Lançamento"  className='main'></Imovel>
+            <Imovel  nome='Apartamento' preco={410000} bairro='Jatiúca' tipo="Lançamento" ></Imovel>
+            <Imovel  nome='Apartamento' preco={410000} bairro='Jatiúca' tipo="Lançamento" ></Imovel>
           </GridLayout>
         </SecondSection>
         <Footer/>

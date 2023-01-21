@@ -10,12 +10,17 @@ export const Container = styled.div<ImageProps>`
     background: url(${(props)=> props.background}) no-repeat center;
     background-size: cover;
     min-height: 256px;
+    min-width: 350px;
+
+    margin-bottom: 12px;
+    margin-right: 12px;
 `;
 
 export const Filter = styled.div`
     background: rgba(250, 250, 250, 0.25);
     width: 100%;
     height: 100%;
+    min-height: 256px;
     border-radius: inherit;
     padding-top: 1em;
 
@@ -31,7 +36,7 @@ export const Content = styled.div`
     padding: 1em;
     h2{
         font-weight: 700;
-        font-size: 24px;
+        font-size: 24px!important;
 
         span{
             color: #265795;

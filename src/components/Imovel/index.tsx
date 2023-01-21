@@ -4,18 +4,22 @@ import Badge from '../Badge'
 import {Container, Content, Filter, ImageContainer} from './styles'
 
 type imovelProps = {
-    className?: string
+    className?: string,
+    nome: string,
+    preco: number,
+    bairro: string,
+    tipo: string,
 }
 
-const Imovel: React.FC<imovelProps> = ({className}) => {
+const Imovel: React.FC<imovelProps> = ({className, nome, preco, bairro, tipo}) => {
   return (
     <Container className={className} background={FotoApto1.src}>
         <Filter>
-            <Badge fontSize={16}>Lançamento</Badge>
+            <Badge fontSize={16}>{tipo}</Badge>
             <Content>
               <h2>
-                <span>Jatiúca</span>
-                Apartamento
+                <span>{bairro}</span>
+                {nome}
               </h2>
             </Content>
         </Filter>
