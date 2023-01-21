@@ -85,6 +85,10 @@ export const MenuChecker = styled.input`
 `;
 
 export const MenuButton = styled.label`
+    display: none;
+    @media(max-width: 768px){
+        display: inline;
+    }
     cursor: pointer;
 `;
 
@@ -98,12 +102,14 @@ export const Line = styled.div`
 
 export const CloseButton = styled.label`
     display: none;
+    visibility: hidden;
     margin-bottom: 3em;
 
     cursor: pointer;
 
     @media(max-width: 768px){
         display: inline-flex;
+        visibility: visible;
         justify-content: center;
         align-items: center;
     }
