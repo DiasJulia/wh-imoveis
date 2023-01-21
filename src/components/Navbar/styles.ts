@@ -14,7 +14,11 @@ export const Nav = styled.nav<navProps>`
     top: 0;
     justify-content: center;
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2), 0px 8px 16px rgba(0, 0, 0, 0.08);
-    z-index: 10;
+    z-index: 11;
+
+    @media(max-width: 768px){
+        justify-content: right;
+    }
 `;
 
 export const Menu = styled.ul`
@@ -46,11 +50,78 @@ export const Menu = styled.ul`
     li:hover {
         color: #09346B;
     }
+
+    @media(max-width: 768px){
+        position: fixed;
+        z-index: 8;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        display: none;
+        padding: 1em;
+        text-align: right;
+
+        details > ul{
+        position: relative;
+        background: transparent;
+        box-shadow: none;
+        margin-top: 0;
+        };
+    }
+`;
+
+export const MenuChecker = styled.input`
+    &:checked + label{
+        background-color: black;
+    }
+    &:checked ~ ${Menu}{
+        display: block;
+        width: 100%;
+        background: #fff;
+    }
+
+    visibility: hidden;
+`;
+
+export const MenuButton = styled.label`
+    cursor: pointer;
+`;
+
+export const Line = styled.div`
+    width: 32px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #09346B;
+    margin: 4px;
+`;
+
+export const CloseButton = styled.label`
+    display: none;
+    margin-bottom: 3em;
+
+    cursor: pointer;
+
+    @media(max-width: 768px){
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    div:first-of-type{
+        transform: rotate(45deg);
+        position: absolute;
+    }
+
+    div:nth-of-type(2){
+        transform: rotate(-45deg);
+    }
 `;
 
 export const Logo = styled.div`
     position: absolute;
     top: 0;
+    z-index: 12;
     left: max(calc(100vw - 1400px)/2, 1rem);
     clip-path: polygon(50% 100%, 100% calc(100% - 50px), 100% 0, 0 0, 0 calc(100% - 50px));
     background-color: #09346B;

@@ -63,4 +63,9 @@ export const GridLayout = styled.div`
   grid-row-gap: 12px;
   
   .main { grid-area: 1 / 1 / 3 / 2; }
+
+  @media(max-width: 768px){
+    display: flex;
+    flex-wrap: wrap;
+  }
 `;

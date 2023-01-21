@@ -2,7 +2,7 @@ import Link from "next/link";
 import React, { useEffect, useState } from "react";
 
 import imoveis from "../../data/imoveis.json";
-import { Logo, Menu, Nav } from "./styles";
+import { CloseButton, Line, Logo, Menu, MenuButton, MenuChecker, Nav } from "./styles";
 
 const Navbar = () => {
   const bairros = Array.from(
@@ -32,7 +32,17 @@ const Navbar = () => {
             W
         </Logo>
       </Link>
-      <Menu>
+      <MenuChecker id="menu" name="menu" type='checkbox'/>
+      <MenuButton htmlFor="menu">
+        <Line></Line>
+        <Line></Line>
+        <Line></Line>
+      </MenuButton>
+      <Menu >
+        <CloseButton htmlFor="menu">
+          <Line></Line>
+          <Line></Line>
+        </CloseButton>
         <li>
           <details
             open={open}
