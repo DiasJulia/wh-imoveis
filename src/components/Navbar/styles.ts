@@ -18,6 +18,7 @@ export const Nav = styled.nav<navProps>`
 
     @media(max-width: 768px){
         justify-content: right;
+        padding: 1rem;
     }
 `;
 
@@ -137,4 +138,10 @@ export const Logo = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media(max-width: 768px){
+        width:64px;
+        clip-path: polygon(50% 100%, 100% calc(100% - 25px), 100% 0, 0 0, 0 calc(100% - 25px));
+        height: calc(100% + 25px);
+    }
 `;
