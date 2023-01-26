@@ -1,14 +1,15 @@
 import styled from "styled-components";
 
+import Image from 'next/image';
+
 type ImageProps = {
     background: string;
 }
 
 export const Container = styled.div<ImageProps>`
+    position: relative;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 8px;
-    background: url(${(props)=> props.background}) no-repeat center;
-    background-size: cover;
     min-height: 256px;
     min-width: 350px;
 
@@ -17,6 +18,13 @@ export const Container = styled.div<ImageProps>`
 `;
 
 export const Filter = styled.div`
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    object-fit: cover;
+
     background: rgba(250, 250, 250, 0.25);
     width: 100%;
     height: 100%;
@@ -48,10 +56,9 @@ export const Content = styled.div`
     }
 `;
 
-export const ImageContainer = styled.div<ImageProps>`
-    background: url(${(props)=> props.background}) no-repeat center;
-    background-size: cover;
-    position: absolute;
+export const Picture = styled(Image)`
     width: 100%;
     height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
 `;

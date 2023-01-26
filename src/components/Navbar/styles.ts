@@ -56,7 +56,6 @@ export const Menu = styled.ul`
         position: fixed;
         z-index: 8;
         width: 100%;
-        height: 100vh;
         top: 0;
         left: 0;
         display: none;
@@ -73,13 +72,10 @@ export const Menu = styled.ul`
 `;
 
 export const MenuChecker = styled.input`
-    &:checked + label{
-        background-color: black;
-    }
     &:checked ~ ${Menu}{
         display: block;
         width: 100%;
-        background: #fff;
+        background: #ffffff;
     }
 
     visibility: hidden;
