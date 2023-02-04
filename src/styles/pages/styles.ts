@@ -69,3 +69,14 @@ export const GridLayout = styled.div`
     flex-wrap: wrap;
   }
 `;
+
+export const ThirdSection = styled.section`
+  padding: 2em max(calc(100vw - 1400px)/2, 1rem);
+  width: 100%;
+  min-height: 300px;
+  background-color: #265795;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+`;

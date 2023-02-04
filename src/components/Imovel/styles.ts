@@ -1,12 +1,13 @@
 import styled from "styled-components";
 
 import Image from 'next/image';
+import Link from "next/link";
 
 type ImageProps = {
     background: string;
 }
 
-export const Container = styled.div<ImageProps>`
+export const Container = styled(Link)<ImageProps>`
     position: relative;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 8px;

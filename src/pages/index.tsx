@@ -1,8 +1,8 @@
 import Head from 'next/head'
 import styles from '@/styles/Home.module.css'
-import {Badge, Footer, Navbar, Imovel} from '@/components'
+import {Badge, Imovel} from '@/components'
 
-import { Filter, FirstSection, GridLayout, SecondSection, WhiteBlock } from '@/styles/pages/styles'
+import { Filter, FirstSection, GridLayout, SecondSection, ThirdSection, WhiteBlock } from '@/styles/pages/styles'
 
 export default function Home() {
   return (
@@ -14,7 +14,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <Navbar/>
+        
         <FirstSection>
           <Filter>
             <div>
@@ -33,12 +33,17 @@ export default function Home() {
             Destaques
           </h2>
           <GridLayout>
-            <Imovel  nome='Apartamento' preco={410000} bairro='Jatiúca' tipo="Lançamento"  className='main'></Imovel>
-            <Imovel  nome='Apartamento' preco={410000} bairro='Jatiúca' tipo="Lançamento" ></Imovel>
-            <Imovel  nome='Apartamento' preco={410000} bairro='Jatiúca' tipo="Lançamento" ></Imovel>
+            <Imovel id={1} nome='Apartamento' preco={410000} bairro='Jatiúca' tipo="Lançamento"  className='main'></Imovel>
+            <Imovel id={1} nome='Apartamento' preco={410000} bairro='Jatiúca' tipo="Lançamento" ></Imovel>
+            <Imovel id={1} nome='Apartamento' preco={410000} bairro='Jatiúca' tipo="Lançamento" ></Imovel>
           </GridLayout>
         </SecondSection>
-        <Footer/>
+        <ThirdSection>
+          <div>
+            <h2></h2>
+            <p></p>
+          </div>
+        </ThirdSection>
       </main>
     </>
   )

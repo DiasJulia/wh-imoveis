@@ -30,7 +30,7 @@ const Imoveis = () => {
           imoveis.map((imovel)=>{
             return ((query.bairro===undefined || imovel.bairro===query.bairro) ?
             <div key={imovel.id}>
-              <Imovel nome={imovel.nome} preco={imovel.preco} bairro={imovel.bairro} tipo={imovel.tipo} />
+              <Imovel id={imovel.id} nome={imovel.nome} preco={imovel.preco} bairro={imovel.bairro} tipo={imovel.tipo} />
               </div> : <></>)
           })
         }
