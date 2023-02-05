@@ -3,6 +3,8 @@ import styles from '@/styles/Home.module.css'
 import {Badge, Imovel} from '@/components'
 
 import { Filter, FirstSection, GridLayout, SecondSection, ThirdSection, WhiteBlock } from '@/styles/pages/styles'
+import Image from 'next/image'
+import {Henrique1} from '@/assets'
 
 export default function Home() {
   return (
@@ -39,9 +41,16 @@ export default function Home() {
           </GridLayout>
         </SecondSection>
         <ThirdSection>
+          <Image height={500} src={Henrique1} alt="Foto do Henrique" />
           <div>
-            <h2></h2>
-            <p></p>
+          <h2>
+            <Badge>
+              Saiba
+            </Badge>
+            Quem sou eu
+          </h2>
+            <p>Atuo como Assessor de Investimentos Imobiliários há 5 anos, especialista em compra, venda e investimentos em imóveis.</p>
+            <button>Encontre seu lar ideal</button>
           </div>
         </ThirdSection>
       </main>

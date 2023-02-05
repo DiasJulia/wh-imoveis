@@ -71,7 +71,13 @@ export const GridLayout = styled.div`
 `;
 
 export const ThirdSection = styled.section`
-  padding: 2em max(calc(100vw - 1400px)/2, 1rem);
+  h2{
+    font-weight: 700;
+    font-size: 48px;
+    color: #FFF;
+  }
+
+  padding: 2em max(calc(100vw - 1400px)/2, 1rem) 0;
   width: 100%;
   min-height: 300px;
   background-color: #265795;
