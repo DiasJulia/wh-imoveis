@@ -13,7 +13,7 @@ import {
   WhiteBlock,
 } from "@/styles/pages/styles";
 import Image from "next/image";
-import { Henrique1 } from "@/assets";
+import { Henrique1, Henrique2 } from "@/assets";
 import Link from "next/link";
 
 export default function Home() {
@@ -112,7 +112,7 @@ export default function Home() {
             </p>
             <button>Encontre seu lar ideal</button>
           </div>
-          <Image height={500} src={Henrique1} alt="Foto do Henrique" />
+          <Image height={500} src={Henrique2} alt="Foto do Henrique" />
         </FourthSection>
         <FifthSection id="contato">
           <Image height={500} src={Henrique1} alt="Foto do Henrique" />

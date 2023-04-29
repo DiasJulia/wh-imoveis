@@ -7,7 +7,7 @@ export default function App({ Component, pageProps }: AppProps) {
     <GlobalStyle/>
     <Navbar/>
     <Sidebar/>
-    <Whatsapp/>
+    {/* <Whatsapp/> */}
     <Component {...pageProps} />
     <Footer/>
   </>
