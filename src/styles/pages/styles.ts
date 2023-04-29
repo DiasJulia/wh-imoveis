@@ -18,16 +18,16 @@ export const Filter = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 2em max(calc(100vw - 1400px)/2, 1rem);
+  padding: 2em max(calc(100vw - 1400px) / 2, 1rem);
 
-  h1{
+  h1 {
     text-transform: uppercase;
     color: #122738;
     font-weight: 700;
     font-size: 48px;
   }
 
-  h2{
+  h2 {
     font-weight: 700;
     font-size: 32px;
     text-transform: uppercase;
@@ -45,10 +45,10 @@ export const WhiteBlock = styled.div`
 `;
 
 export const SecondSection = styled.section`
-  padding: 2em max(calc(100vw - 1400px)/2, 1rem);
+  padding: 2em max(calc(100vw - 1400px) / 2, 1rem);
   width: 100%;
 
-  h2{
+  h2 {
     font-weight: 700;
     font-size: 48px;
     color: #122738;
@@ -61,27 +61,45 @@ export const GridLayout = styled.div`
   grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 12px;
   grid-row-gap: 12px;
-  
-  .main { grid-area: 1 / 1 / 3 / 2; }
 
-  @media(max-width: 768px){
+  .main {
+    grid-area: 1 / 1 / 3 / 2;
+  }
+
+  @media (max-width: 768px) {
     display: flex;
     flex-wrap: wrap;
   }
 `;
 
 export const ThirdSection = styled.section`
-  h2{
+  padding: 2em max(calc(100vw - 1400px) / 2, 1rem);
+  width: 100%;
+  .title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+
+    color: #265795;
+  }
+  .carousel {
+    display: flex;
+  }
+`;
+
+export const FourthSection = styled.section`
+  h2 {
     font-weight: 700;
     font-size: 48px;
-    color: #FFF;
+    color: #fff;
   }
 
-  padding: 2em max(calc(100vw - 1400px)/2, 1rem) 0;
+  padding: 2em max(calc(100vw - 1400px) / 2, 1rem) 0;
   width: 100%;
   min-height: 300px;
   background-color: #265795;
-  color: #FFFFFF;
+  color: #ffffff;
   display: flex;
   justify-content: space-between;
   align-items: center;
