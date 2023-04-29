@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Container = styled.div`
   background-color: #09346b;
   width: 100%;
-  padding: 2em max(calc(100vw - 1400px) / 2, 1rem);
+  padding: 2em max(calc(100vw - 1100px) / 2, 1rem);
 
   display: flex;
   flex-wrap: wrap;
