@@ -68,7 +68,7 @@ export default function Home() {
             ></Imovel>
           </GridLayout>
         </SecondSection>
-        <ThirdSection>
+        <ThirdSection id="imoveis">
           <h2 className="title">
             Tenho certeza de que encontrará o imóvel dos seus sonhos. <br /> Não perca
             mais tempo e entre em contato agora.
@@ -100,7 +100,7 @@ export default function Home() {
           </div>
           <Link href="/imoveis">Veja mais</Link>
         </ThirdSection>
-        <FourthSection>
+        <FourthSection id="sobremim">
           <div>
             <h2>
               <Badge>Saiba</Badge>
@@ -114,7 +114,7 @@ export default function Home() {
           </div>
           <Image height={500} src={Henrique1} alt="Foto do Henrique" />
         </FourthSection>
-        <FifthSection>
+        <FifthSection id="contato">
           <Image height={500} src={Henrique1} alt="Foto do Henrique" />
           <ContactForm></ContactForm>
         </FifthSection>
