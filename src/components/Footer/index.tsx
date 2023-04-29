@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <Container>
     <Navigation>
-        <ul>
+        {/* <ul>
             <li>
                 <Link href="/imoveis">Imóveis</Link>
             </li>
@@ -18,7 +18,7 @@ const Footer = () => {
                 </li>
                 })}
             </ul>
-        </ul>
+        </ul> */}
     </Navigation>
     <Logo></Logo>
     <div></div>

@@ -44,7 +44,7 @@ const Navbar = () => {
           <Line></Line>
         </CloseButton>
         <li>
-        <Link href="#imoveis">Imóveis</Link>
+        <Link href="#imoveis" scroll={false}>Imóveis</Link>
           {/* <details
             open={open}
             onMouseOver={() => {
@@ -80,13 +80,13 @@ const Navbar = () => {
           </details> */}
         </li>
         <li>
-          <Link href="#sobremim">Sobre mim</Link>
+          <Link href="#sobremim" scroll={false}>Sobre mim</Link>
         </li>
         <li>
-          <Link href="#depoimentos">Depoimentos</Link>
+          <Link href="#depoimentos" scroll={false}>Depoimentos</Link>
         </li>
         <li>
-          <Link href="#contato">Contato</Link>
+          <Link href="#contato" scroll={false}>Contato</Link>
         </li>
       </Menu>
     </Nav>
