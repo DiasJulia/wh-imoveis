@@ -1,8 +1,9 @@
 import Head from "next/head";
 import styles from "@/styles/Home.module.css";
-import { Badge, Imovel } from "@/components";
+import { Badge, Imovel, ContactForm } from "@/components";
 
 import {
+  FifthSection,
   Filter,
   FirstSection,
   FourthSection,
@@ -100,7 +101,6 @@ export default function Home() {
           <Link href="/imoveis">Veja mais</Link>
         </ThirdSection>
         <FourthSection>
-          <Image height={500} src={Henrique1} alt="Foto do Henrique" />
           <div>
             <h2>
               <Badge>Saiba</Badge>
@@ -112,7 +112,12 @@ export default function Home() {
             </p>
             <button>Encontre seu lar ideal</button>
           </div>
+          <Image height={500} src={Henrique1} alt="Foto do Henrique" />
         </FourthSection>
+        <FifthSection>
+          <Image height={500} src={Henrique1} alt="Foto do Henrique" />
+          <ContactForm></ContactForm>
+        </FifthSection>
       </main>
     </>
   );

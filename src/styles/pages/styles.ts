@@ -18,7 +18,7 @@ export const Filter = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 2em max(calc(100vw - 1400px) / 2, 1rem);
+  padding: 2em max(calc(100vw - 1100px) / 2, 1rem);
 
   h1 {
     text-transform: uppercase;
@@ -45,7 +45,7 @@ export const WhiteBlock = styled.div`
 `;
 
 export const SecondSection = styled.section`
-  padding: 2em max(calc(100vw - 1400px) / 2, 1rem);
+  padding: 2em max(calc(100vw - 1100px) / 2, 1rem);
   width: 100%;
 
   h2 {
@@ -73,7 +73,7 @@ export const GridLayout = styled.div`
 `;
 
 export const ThirdSection = styled.section`
-  padding: 2em max(calc(100vw - 1400px) / 2, 1rem);
+  padding: 2em max(calc(100vw - 1100px) / 2, 1rem);
   width: 100%;
   .title {
     font-weight: 700;
@@ -95,11 +95,26 @@ export const FourthSection = styled.section`
     color: #fff;
   }
 
-  padding: 2em max(calc(100vw - 1400px) / 2, 1rem) 0;
+  padding: 2em max(calc(100vw - 1100px) / 2, 1rem) 0;
   width: 100%;
   min-height: 300px;
   background-color: #265795;
   color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+`;
+
+export const FifthSection = styled.section`
+  h2 {
+    font-weight: 700;
+    font-size: 48px;
+    color: #fff;
+  }
+
+  padding: 2em max(calc(100vw - 1100px) / 2, 1rem) 0;
+  width: 100%;
+  min-height: 300px;
   display: flex;
   justify-content: space-between;
   align-items: center;
